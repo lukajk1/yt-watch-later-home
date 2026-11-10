@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Watch Later Home",
+  "version": "1.0.0",
+  "description": "Makes the YouTube homepage your Watch Later list as a grid, with a button for the normal recommendations.",
+  "icons": {
+    "128": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["grid.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
